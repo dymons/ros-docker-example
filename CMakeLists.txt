@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12...3.14)
+cmake_minimum_required(VERSION 2.8)
 
 project(ros_docker_example DESCRIPTION "An example of the use of dockers with ROS" LANGUAGES CXX)
 
