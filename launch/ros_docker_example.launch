@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="ros_docker_example" type="ros_node_talker" name="ros_node_talker" output="screen">
+        <remap from="~/out_chatter" to="/data"/>
+    </node>
+
+    <node pkg="ros_docker_example" type="ros_node_listener" name="ros_node_listener" output="screen">
+        <remap from="~/in_chatter" to="/data"/>
+    </node>
+
+</launch>

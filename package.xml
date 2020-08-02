@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>ros_docker_example</name>
+    <version>1.0.0</version>
+    <description>An example of the use of dockers with ROS</description>
+    <maintainer email="dmitriy.emelyanov.de@gmail.com">Emelyanov Dmitry</maintainer>
+    <author email="dmitriy.emelyanov.de@gmail.com">Emelyanov Dmitry</author>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>roscpp</depend>
+    <depend>std_msgs</depend>
+
+</package>
