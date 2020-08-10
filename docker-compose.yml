@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  roscore:
+    network_mode: host
+    image: ros:melodic
+    container_name: roscore
+    command: roscore
+
+  ros_docker_example:
+    network_mode: host
+    container_name: ros_docker_example
+    build: .
+    depends_on:
+      - roscore
+    environment:
+      - "ROS_MASTER_URI=http://starline:11311"
+    command: rostopic pub /chatter std_msgs/String "hello"
