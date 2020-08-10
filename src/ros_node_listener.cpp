@@ -9,7 +9,7 @@ void callback(const std_msgs::String::ConstPtr& t_msg)
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "listener");
-    ros::NodeHandle nH;
+    ros::NodeHandle nH { "~" };
 
     ROS_INFO_STREAM("listener is running");
 

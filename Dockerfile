@@ -25,10 +25,15 @@ COPY . /catkin_ws/src/ros-docker-example
 WORKDIR /catkin_ws/
 
 RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
-RUN source ~/.bashrc
+RUN echo "source /catkin_ws/devel/setup.bash" >> ~/.bashrc
+# RUN source ~/.bashrc
 
 RUN catkin init
 RUN rosdep install -y -r --from-path src
 RUN catkin build
 
-CMD ["roslaunch", "ros_docker_example", "ros_docker_example.launch"]
+# CMD ["source ~/.bashrc"]
+# CMD ["source /catkin_ws/devel/setup.bash"]
+# CMD ["roslaunch", "ros_docker_example", "ros_docker_example.launch"]
+# source ~/.bashrc
+# roslaunch ros_docker_example ros_docker_example.launch

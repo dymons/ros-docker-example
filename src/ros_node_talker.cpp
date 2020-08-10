@@ -4,7 +4,7 @@
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "talker");
-    ros::NodeHandle nH;
+    ros::NodeHandle nH { "~" };
 
     ROS_INFO_STREAM("talker is running");
 
