@@ -32,12 +32,3 @@ docker system prune
 docker-compose build
 docker-compose up
 ```
-
-
-----
-
-
-https://github.com/pgigioli/darknet_ros/blob/cuda8_0-dev/Dockerfile
-https://blog.zhaw.ch/icclab/challenges-with-running-ros-on-kubernetes/
-https://github.com/shun/docker-ros-mqtt-topic-example/blob/master/docker-compose.yaml
-https://github.com/bryanbutenhoff/pub-sub
